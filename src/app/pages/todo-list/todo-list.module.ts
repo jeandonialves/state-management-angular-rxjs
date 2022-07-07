@@ -6,6 +6,7 @@ import { TodoListComponent } from './todo-list.component';
 import { TasksComponent } from './partials/tasks/tasks.component';
 import { TasksStartedComponent } from './partials/tasks-started/tasks-started.component';
 import { TasksFinishedComponent } from './partials/tasks-finished/tasks-finished.component';
+import { TodoComponent } from './partials/todo/todo.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { TasksFinishedComponent } from './partials/tasks-finished/tasks-finished
     TodoListComponent,
     TasksComponent,
     TasksStartedComponent,
-    TasksFinishedComponent
+    TasksFinishedComponent,
+    TodoComponent
   ],
   imports: [
     CommonModule,
