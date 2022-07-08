@@ -1,0 +1,12 @@
+.todo-list {
+    button {
+        background: transparent;
+        border: none;
+        margin: 2px;
+        opacity: 0.8;
+        font-size: 15px;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

@@ -23,6 +23,10 @@ export class TasksFinishedComponent implements OnInit {
       );
   }
 
+  onToggle(event: any) {
+    this.todoService.toggle(event)
+  }
+
   ngOnInit(): void {}
 
 }

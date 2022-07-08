@@ -22,5 +22,9 @@ export class TasksStartedComponent implements OnInit {
       );
   }
 
+  onToggle(event: any) {
+    this.todoService.toggle(event)
+  }
+
   ngOnInit(): void {}
 }

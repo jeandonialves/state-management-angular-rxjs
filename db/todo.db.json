@@ -1,46 +1,46 @@
 {
-    "todolist": [
-        {
-            "id": 1,
-            "name": "Responder e-mail",
-            "finished": false,
-            "started": true
-        },
-        {
-            "id": 2,
-            "name": "Reuniao com fornecedor",
-            "finished": true,
-            "started": false
-        },
-        {
-            "id": 3,
-            "name": "Finalizar curso de Angular",
-            "finished": false,
-            "started": false
-        },
-        {
-            "id": 4,
-            "name": "Publicar feedback no linkedin",
-            "finished": false,
-            "started": false
-        },
-        {
-            "id": 5,
-            "name": "Levar cachorro no veterinário",
-            "finished": false,
-            "started": true
-        },
-        {
-            "id": 6,
-            "name": "Ligar para mão",
-            "finished": false,
-            "started": true
-        },
-        {
-            "id": 7,
-            "name": "Comprar café",
-            "finished": true,
-            "started": false
-        }
-    ]
+  "todolist": [
+    {
+      "id": 1,
+      "name": "Responder e-mail",
+      "finished": false,
+      "started": true
+    },
+    {
+      "id": 2,
+      "name": "Reuniao com fornecedor",
+      "finished": false,
+      "started": true
+    },
+    {
+      "id": 3,
+      "name": "Finalizar curso de Angular",
+      "finished": false,
+      "started": false
+    },
+    {
+      "id": 4,
+      "name": "Publicar feedback no linkedin",
+      "finished": false,
+      "started": false
+    },
+    {
+      "id": 5,
+      "name": "Levar cachorro no veterinário",
+      "finished": false,
+      "started": false
+    },
+    {
+      "id": 6,
+      "name": "Ligar para mão",
+      "finished": true,
+      "started": false
+    },
+    {
+      "id": 7,
+      "name": "Comprar café",
+      "finished": false,
+      "started": true
+    }
+  ]
 }

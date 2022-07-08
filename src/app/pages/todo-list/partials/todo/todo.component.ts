@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Task } from '../../models/task.model';
 
 @Component({
@@ -8,4 +8,33 @@ import { Task } from '../../models/task.model';
 })
 export class TodoComponent {
   @Input() list: Task[] | null = [];
+  @Output() toggle = new EventEmitter<any>();
+
+  toggleItem(index: number, action: string) {
+    if (this.list) {
+      const task = this.list[index];
+
+      switch (action) {
+        case 'started':
+          task.finished = false;
+          task.started = true;
+          break;
+        case 'finished':
+          task.finished = true;
+          task.started = false;
+          break;
+        case 'resume':
+          task.finished = false;
+          task.started = true;
+          break;
+        case 'cancel':
+          task.finished = false;
+          task.started = false;
+          break;
+      }
+      this.toggle.emit({
+        task: { ...task },
+      });
+    }
+  }
 }

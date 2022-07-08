@@ -2,15 +2,24 @@
   <h3><ng-content></ng-content></h3>
   <table class="table table-striped">
     <tbody>
-        <tr *ngFor="let item of list">
-            <td>
-                <span>{{ item.name }}</span>
+      <tr *ngFor="let item of list; index as i">
+        <td>
+          <span>{{ item.name }}</span>
 
-                <span><i class="bi-alarm"></i></span>
-                <span><i class="fa-thin fa-check"></i></span>
-                <span><i class="fa-thin fa-check"></i></span>
-            </td>
-        </tr>
+          <button (click)="toggleItem(i, 'finished')" *ngIf="!item.finished && item.started">
+            <i class="bi bi-check2"></i>
+          </button>
+          <button (click)="toggleItem(i, 'started')" *ngIf="!item.finished && !item.started">
+            <i class="bi bi-play-fill"></i>
+          </button>
+          <button (click)="toggleItem(i, 'resume')" *ngIf="item.finished && !item.started">
+            <i class="bi bi-arrow-90deg-left"></i>
+          </button>
+          <button (click)="toggleItem(i, 'cancel')" *ngIf="!item.finished && item.started">
+            <i class="bi bi-arrow-90deg-left"></i>
+          </button>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
