@@ -7,5 +7,5 @@ import { Task } from '../../models/task.model';
   styleUrls: ['./todo.component.scss'],
 })
 export class TodoComponent {
-  @Input() list: Task[] = [];
+  @Input() list: Task[] | null = [];
 }
